@@ -1,0 +1,39 @@
+<!-- Table to display contacts -->
+
+<!-- Table to list all contact available -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+<div class="container-table100">
+  <div class="wrap-table100">
+    <div class="table" >
+      <div class="row header">
+        <div class="cell">
+          Name
+        </div>
+        <div class="cell">
+          Mobile Number
+        </div>
+      </div>
+      <div class="row" *ngFor="let contact of contacts">
+        <div class="cell" data-title="Name">
+          {{contact.name}}
+        </div>
+        <div class="cell" data-title="Mobile Number">
+          {{contact.mobile}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--<table class="table" style="margin-left: auto;margin-right: auto;width:40%">-->
+<!--  <thead class="table-dark">-->
+<!--  <th>Name</th>-->
+<!--  <th>Mobile</th>-->
+<!--  </thead>-->
+<!--  <tbody>-->
+<!--  <tr *ngFor="let contact of contacts">-->
+<!--    <td>{{contact.name}}</td>-->
+<!--    <td>{{contact.mobile}}</td>-->
+<!--  </tr>-->
+<!--  </tbody>-->
+<!--</table>-->
+<!-- Button to go back to contact form view  -->
